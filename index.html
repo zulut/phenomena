@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Phenomena Gallery</title>
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f7fa;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 20px 0;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: #7f8c8d;
+      font-size: 1.2rem;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Media items */
+    .media-item {
+      margin-bottom: 60px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .media-content {
+      width: 100%;
+      display: block;
+      order: 2; /* Move media below caption */
+    }
+    
+    img.media-content {
+      height: auto;
+    }
+    
+    video.media-content {
+      height: auto;
+    }
+    
+    .caption {
+      padding: 20px;
+      font-size: 1.1rem;
+      color: #34495e;
+      background-color: white;
+      border-bottom: 1px solid #f1f1f1;
+      order: 1; /* Move caption above media */
+    }
+    
+    /* Section headers */
+    .section-header {
+      text-align: center;
+      margin: 60px 0 40px;
+      color: #2c3e50;
+      font-size: 2rem;
+      position: relative;
+    }
+    
+    .section-header::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #3498db;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      color: #7f8c8d;
+      border-top: 1px solid #e1e4e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Our Extraordinary Earth</h1>
+      <p class="subtitle">Surreal phenomena captured on camera</p>
+    </div>
+  </header>
+  
+  <main class="container">
+    <!-- Item 1 -->
+    <div class="media-item">
+      <img class="media-content" src="media/The sea in the sky.jpg" alt="The sea in the sky">
+      <div class="caption">The sea in the sky</div>
+    </div>
+    
+    <!-- Item 2 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Purple dusk in Vietnam.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Purple dusk in Vietnam</div>
+    </div>
+    
+    <!-- Item 3 -->
+    <div class="media-item">
+      <img class="media-content" src="media/One of the most mysterious weather phenomena on Earth - meet the sprites.jpg" alt="Sprites weather phenomenon">
+      <div class="caption">One of the most mysterious weather phenomena on Earth: meet the sprites</div>
+    </div>
+    
+    <!-- Item 4 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Spectacular video of a meteorite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Spectacular video of a meteorite</div>
+    </div>
+    
+    <!-- Item 5 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Clouds looking like a tsunami.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">The clouds looks like tsunami</div>
+    </div>
+    
+    <!-- Item 6 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Rainbow as a full circle when seen from great heights.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Rainbows are actually circles - the full circle is visible from great heights</div>
+    </div>
+    
+    <!-- Item 7 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/A spectacular luminous cloud.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">A spectacular luminous cloud</div>
+    </div>
+    
+    <!-- Item 8 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Volcano lightning.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Volcano lightning</div>
+    </div>
+    
+    <!-- Item 9 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Static electricity.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">What's wrong with her hair?</div>
+    </div>
+    
+    <!-- Item 10 -->
+    <div class="media-item">
+      <img class="media-content" src="media/Cross waves interference pattern.jpg" alt="Cross waves">
+      <div class="caption">A rare phenomenon called "cross waves"</div>
+    </div>
+    
+    <!-- Item 11 -->
+    <div class="media-item">
+      <img class="media-content" src="media/A meteorite falling near the most active volcano (Mount Merapi) in Indonesia.jpg" alt="Meteorite near Mount Merapi">
+      <div class="caption">A meteorite fell near the most active volcano (Mount Merapi) in Indonesia</div>
+    </div>
+    
+    <!-- Item 12 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Rock river.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">A river of rocks</div>
+    </div>
+    
+    <!-- Item 13 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Bore wave on the Qiantang River - the largest tidal river in the world with speeds above 24 kph.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">The Qiantang River is the largest tidal river in the world, with speeds above 24 km/h</div>
+    </div>
+    
+    <!-- Item 14 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Fiery sunset caused by Rayleigh scattering.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Mind-blowing sunset. This happens due to a phenomenon called Rayleigh scattering</div>
+    </div>
+    
+    <!-- Item 15 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Methane bubbles under the ice of Lake Baikal.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Methane bubbles under the ice of Lake Baikal</div>
+    </div>
+    
+    <!-- Item 16 -->
+    <div class="media-item">
+      <img class="media-content" src="media/Ice Eggs - strange phenomenon when ice is carried by wind and water.jpg" alt="Ice Eggs">
+      <div class="caption">Ice Eggs: This strange phenomenon occurs when ice is carried by wind and water</div>
+    </div>
+    
+    <!-- Item 17 -->
+    <div class="media-item">
+      <video class="media-content" controls>
+        <source src="media/Aurora Borealis.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Northern lights, simply wonderful</div>
+    </div>
+    
+    <!-- Item 18 -->
+    <div class="media-item">
+      <img class="media-content" src="media/The Giant's Causeway in Northern Ireland.jpg" alt="Giant's Causeway">
+      <div class="caption">The Giant's Causeway in Northern Ireland</div>
+    </div>
+    
+    <!-- Item 19 -->
+    <div class="media-item">
+      <img class="media-content" src="media/Northern lights in Tuscany, Italy.jpg" alt="Northern lights in Tuscany">
+      <div class="caption">Northern lights in Tuscany, Italy</div>
+    </div>
+    
+    <!-- Item 20 -->
+    <div class="media-item">
+      <img class="media-content" src="media/broken-spectre.jpg" alt="Broken spectre">
+      <div class="caption">The phenomenon of the "Broken spectre". It occurs when a person stands above the upper surface of a cloud - on a mountain or high ground - with the Sun behind them.</div>
+    </div>
+    
+    <!-- Item 21 -->
+    <div class="media-item">
+      <img class="media-content" src="media/iceland-ice-cave.jpg" alt="Ice cave in Iceland">
+      <div class="caption">Travel photographer Sarah Bethea captured this stunning photograph in Iceland. Where the golden rays of the setting sun entered an ice cave, dyeing a section of the cave's ice an amber colour</div>
+    </div>
+  </main>
+  
+  <footer class="container">
+    <p>A collection of Earth's most extraordinary natural phenomena</p>
+  </footer>
+</body>
+</html>
